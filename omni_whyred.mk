@@ -28,6 +28,9 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
+# CarrierConfig
+PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+
 PRODUCT_NAME := omni_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
