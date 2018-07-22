@@ -21,15 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
+DEVICE_PACKAGE_OVERLAYS += device/xiaomi/whyred/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+
 # Inherit from Omni custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
-
-# CarrierConfig
-PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
 PRODUCT_NAME := omni_whyred
 PRODUCT_BRAND := Xiaomi
