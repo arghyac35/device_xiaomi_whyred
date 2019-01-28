@@ -81,3 +81,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Density
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=420
+
+# QTI Performance
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.at_library=libqti-at.so \
+    vendor.debug.enable.gamed=0
