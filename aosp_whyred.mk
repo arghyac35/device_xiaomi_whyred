@@ -48,7 +48,11 @@ BUILD_FINGERPRINT := "xiaomi/whyred/whyred:9/PKQ1.180904.001/V10.3.1.0.PEIMIXM:u
 
 TARGET_VENDOR := Xiaomi
 
+# Set this flag in build script
+ifeq ($(CURRENT_BUILD_TYPE), gapps)
 # Use Gapps
+TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
 WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
+endif
