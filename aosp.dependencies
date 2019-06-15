@@ -17,5 +17,10 @@
     "repository": "PixelExperience-Devices/vendor_MiuiCamera",
     "target_path": "vendor/MiuiCamera",
     "branch": "pie-whyred"
+  },
+  {
+    "repository": "rashedsahaji/vendor_xiaomi_Gcam",
+    "target_path": "vendor/xiaomi/Gcam",
+    "branch": "9.0"
   }
 ]

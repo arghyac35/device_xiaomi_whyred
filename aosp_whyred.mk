@@ -30,6 +30,7 @@ TARGET_BOOT_ANIMATION_RES := 2140
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/Gcam/config.mk)
 
 PRODUCT_NAME := aosp_whyred
 PRODUCT_BRAND := Xiaomi
