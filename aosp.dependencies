@@ -18,5 +18,10 @@
     "target_path": "packages/apps/GoogleCameraMod",
     "branch": "pie",
     "remote": "pixel-gitlab"
+  },
+  {
+    "repository": "vendor_MiuiCamera",
+    "target_path": "vendor/MiuiCamera",
+    "branch": "pie-whyred"
   }
 ] 
