@@ -1,35 +1,5 @@
 [
   {
-    "remote": "github",
-    "repository": "arghyac35/device_xiaomi_whyred",
-    "target_path": "device/xiaomi/whyred",
-    "revision": "android-9.0"
-  },
-  {
-    "remote": "github",
-    "repository" : "PixelExperience-Devices/vendor_xiaomi",
-    "target_path": "vendor/xiaomi",
-    "branch": "pie"
-  },
-  {
-    "remote": "github",
-    "repository" : "srfarias/kernel_xiaomi_whyred",
-    "target_path": "kernel/xiaomi/whyred",
-    "branch": "caf-pie"
-  },
-  {
-    "remote": "github",
-    "repository": "LineageOS/android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings",
-    "branch": "lineage-16.0"
-  },
-  {
-    "remote": "github",
-    "repository": "PixelExperience-Devices/vendor_MiuiCamera",
-    "target_path": "vendor/MiuiCamera",
-    "branch": "pie-whyred"
-  },
-  {
     "remote": "omnirom",
     "repository": "android_device_qcom_caf-sepolicy",
     "target_path": "device/qcom/sepolicy",
