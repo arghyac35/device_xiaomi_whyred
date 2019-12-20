@@ -1,5 +1,5 @@
 # 
-# Copyright (C) 2018 The Mokee Project
+# Copyright (C) 2018 The AospExtended Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,17 +25,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/aosp/common.mk)
+
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Set Boot Animination Resolution
+TARGET_BOOT_ANIMATION_RES := 2140
 
-PRODUCT_NAME := lineage_whyred
+PRODUCT_NAME := aosp_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi Note 5
+PRODUCT_MODEL := Redmi Note 5 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
